@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/t xools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context="com.example.android.quizapp.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/whiskey_quiz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Whiskey Quiz"
+            android:textAllCaps="true"
+            android:textSize="25sp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold|italic"
+            app:fontFamily="@font/emilys_candy" />
+
+        <TextView
+            style="@style/subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Question 1" />
+
+        <TextView
+            style="@style/questions"
+            app:fontFamily="@font/emilys_candy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="whiskey is a type of distilled alcoholic beverage made from which two grains?" />
+
+        <CheckBox
+            style="@style/answers"
+            android:id="@+id/question_one_barley"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="barley" />
+
+        <CheckBox
+            style="@style/answers"
+            android:id="@+id/question_one_corn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="corn" />
+
+        <CheckBox
+            style="@style/answers"
+            android:id="@+id/question_one_wheat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="wheat" />
+
+        <TextView
+            style="@style/subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Question 2" />
+
+        <TextView
+            style="@style/questions"
+            app:fontFamily="@font/emilys_candy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="whiskey is typically aged in which type of two containers listed below?" />
+
+        <CheckBox
+            style="@style/answers"
+            android:id="@+id/question_two_barrels"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="wooden barrels" />
+
+        <CheckBox
+            style="@style/answers"
+            android:id="@+id/question_two_white_oak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="charred white oak" />
+
+        <CheckBox
+            style="@style/answers"
+            android:id="@+id/question_two_wax_bottles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="red wax bottles" />
+
+        <TextView
+            style="@style/subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Question 3" />
+
+        <TextView
+            style="@style/questions"
+            app:fontFamily="@font/emilys_candy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="what are two notable brands of whiskey listed below?" />
+
+        <CheckBox
+            style="@style/answers"
+            android:id="@+id/question_three_makers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Maker's Mark" />
+
+        <CheckBox
+            style="@style/answers"
+            android:id="@+id/question_three_creek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Knob Creek" />
+
+        <CheckBox
+            style="@style/answers"
+            android:id="@+id/question_hendricks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hendrick's" />
+
+        <TextView
+            style="@style/subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Question 4" />
+
+        <TextView
+            style="@style/questions"
+            app:fontFamily="@font/emilys_candy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="what is the main difference between scotch and whiskey?" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                style="@style/answers"
+                android:id="@+id/geographic_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="geographic" />
+
+            <RadioButton
+                style="@style/answers"
+                android:id="@+id/ingredients_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ingredients" />
+
+            <RadioButton
+                style="@style/answers"
+                android:id="@+id/spelling_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="spelling" />
+        </RadioGroup>
+
+        <TextView
+            style="@style/subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Question 5" />
+
+        <TextView
+            style="@style/questions"
+            app:fontFamily="@font/emilys_candy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="scotch whiskey is made in what country?" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                style="@style/answers"
+                android:id="@+id/usa_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="USA" />
+
+            <RadioButton
+                style="@style/answers"
+                android:id="@+id/ireland_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ireland" />
+
+            <RadioButton
+                style="@style/answers"
+                android:id="@+id/scotland_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Scotland" />
+        </RadioGroup>
+
+        <TextView
+            style="@style/subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Question 6" />
+
+        <TextView
+            style="@style/questions"
+            app:fontFamily="@font/emilys_candy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="jack daniel's is a whiskey made in what state?" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                style="@style/answers"
+                android:id="@+id/memphis_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Memphis" />
+
+            <RadioButton
+                style="@style/answers"
+                android:id="@+id/alabama_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alabama" />
+
+            <RadioButton
+                style="@style/answers"
+                android:id="@+id/tennessee_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tennessee" />
+        </RadioGroup>
+
+        <TextView
+            style="@style/subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Question 7" />
+
+        <TextView
+            style="@style/questions"
+            app:fontFamily="@font/emilys_candy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="maker's mark is a small-batched bourbon whiskey produced in what state?" />
+
+        <EditText
+            android:id="@+id/kentucky_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:hint="Answer"
+            android:inputType="textCapWords" />
+
+        <Button
+            android:id="@+id/button_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:onClick="submitScore"
+            android:text="submit score" />
+
+
+    </LinearLayout>
+
+
+</ScrollView>
+
